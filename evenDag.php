@@ -1,9 +1,15 @@
 <?php
-function evenDag($even='')
+function evenDag()
 {
-  $even=true;
-  $oneven=false;
-  // code...
+  $datum = date("d");
+  echo "De datum van vandaag is $datum"."<br>";
+  if ($datum % 2 == 0){
+    echo " het is een even getal";
 }
-  echo date("l");
+    else {
+      echo " het is een oneven getal";
+
+  }
+}
+evendag();
  ?>
