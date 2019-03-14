@@ -1,11 +1,6 @@
 <?php
- function maakVierkant($Vierkant= "+++++")
- {
-  echo "$Vierkant<br>";
- }
- maakVierkant();
- maakVierkant();
- maakVierkant();
- maakVierkant();
- maakVierkant();
+function maakVierkant(){
+  return "++++<br>++++<br>++++<br>++++<br>++++<br>";
+}
+echo maakVierkant();
 ?>

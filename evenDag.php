@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -12,14 +11,18 @@
       $datum = date("d");
       echo "De datum van vandaag is $datum"."<br>";
       if ($datum % 2 == 0){
-        echo " het is een even getal";
+        return true;
     }
         else {
-          echo " het is een oneven getal";
-
+          return false;
       }
+      //return ($datum % 2 == 0);
     }
-    evendag();
+    if(evendag()){
+      echo "even";
+    } else {
+      echo "oneven";
+    };
      ?>
   </body>
 </html>
