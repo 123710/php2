@@ -1,40 +1,25 @@
-
-<?php
-  // $plussenvierkant = "++++";
-  // $aantaal = 12 ;
-  // $vierkant = telOp($plussenvierkant, $aantaal);
-  // echo $vierkant;
-  // function telOp($plussenvierkant, $aantaal){
-  //   return $plussenvierkant . $aantaal;
-  // }
- ?>
- <?php
-  // function maakVierkant($Vierkant= "+++++")
-  // {
-  //  echo "$Vierkant<br>";
-  // }
-  // maakVierkant();
-  // maakVierkant();
-  // maakVierkant();
-  // maakVierkant();
-  // maakVierkant();
-
-
- function maakVierkant( $breedte, $hoogte){
-   $output = "";
-   for($h =0 ;$h < $hoogte ; $h++){
-     for($b = 0; $b < $breedte; $b++){
-       $output .= "x";
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <?php
+     function maakVierkant( $breedte, $hoogte){
+       $output = "";
+       for($h =0 ;$h < $hoogte ; $h++){
+         for($b = 0; $b < $breedte; $b++){
+           $output .= "x";
+         }
+         $output .= "<br>";
+       }
+       return $output;
      }
-     $output .= "<br>";
-   }
-   return $output;
- }
-
- echo maakVierkant(6 ,9 );
-
- echo "<br>";
-
- echo maakVierkant(15 ,9 );
-
- ?>
+     echo maakVierkant(5 ,5 );
+     echo "<br>";
+     echo maakVierkant(15 ,9 );
+     ?>
+  </body>
+</html>
