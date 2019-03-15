@@ -6,13 +6,20 @@
     <title></title>
   </head>
   <body>
-    <?php
-      function getMax(){
-      $integer = array(2, 9, 4, 7);
-      return max($integer);
-      }
-      echo getMax();
-     ?>
+     <?php
+     function getMax($list){
+       $max= $list[0];
+       for ($i=0; $i < count($list) ; $i++) {
+         if($list[$i]> $max) {
+           $max = $list[$i];
+         }
+       }
+       return $max;
+        echo $list;
+     }
+     $integer = array(2, 66, 54, 107);
 
+     echo getMax($integer);
+    ?>
   </body>
 </html>
