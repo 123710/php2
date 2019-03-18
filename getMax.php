@@ -15,7 +15,6 @@
          }
        }
        return $max;
-        echo $list;
      }
      $integer = array(2, 66, 54, 107);
 
